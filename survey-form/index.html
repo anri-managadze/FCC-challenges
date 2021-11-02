@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<main>
+<header>
+    <div class="logo">
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2020/01/26/Vintage-Retro-Beer-Brewery-Brewing-Logo-Graphics-1.jpg" alt="logo"/>
+        <h2 id="title">Beer Distribution Company</h2>
+    </div>
+    <p id="description">We conduct a survey about our products</p>
+</header>
+<body>
+<form id="survey-form">
+    <div class="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text"
+               id="name"
+               placeholder="Enter Your Name"
+               required/>
+        <label for="email" id="email-label">Email</label>
+        <input type="email"
+               id="email"
+               placeholder="Enter Your Email"
+               required/>
+        <label for="number" id="number-label">Age</label>
+        <input type="number"
+               id="number"
+               placeholder="Enter Your Age"
+               min="18"
+               max="99"
+               required/>
+    </div>
+
+    <div class="dropdown">
+        <label for="dropdown">How often do you use our products?</label>
+        <select id="dropdown">
+            <option disable button>select</option>
+            <option>Never</option>
+            <option>Often</option>
+            <option>Everyday</option>
+            <option>Every Weekends</option>
+        </select>
+    </div>
+
+    <div class="radio">
+        <p> Would you recommend our products?</p>
+        <label for="yes"><input type="radio" id="yes" name ="yes-no" value="yes" checked />Yes</label>
+        <label for="no"><input type="radio" name="yes-no" id="no" value="no"/>No</label>
+
+    </div>
+    <div class="checkbox">
+        <p>What are your favorite products?</p>
+        <label for="black-beer-georgia">
+            <input type="checkbox"
+                   name="beer"
+                   value="black beer georgia"
+                   id="black-beer-georgia">Black Beer "Georgia"</label>
+        <label for="white-beer-georgia">
+            <input type="checkbox"
+                   name="beer"
+                   value="white beer white"
+                   id="white-beer-georgia">White Beer "Georgia"</label>
+        <label for="white-beer-german">
+            <input type="checkbox"
+                   name="beer"
+                   value="white beer german"
+                   id="white-beer-german">White Beer "German"</label>
+        <label for="black-beer-german">
+            <input type="checkbox"
+                   name="beer"
+                   value="black beer german"
+                   id="black-beer-german">Black Beer "German"</label>
+        <label for="beer-czechia">
+            <input type="checkbox"
+                   name="beer"
+                   value="beer czechia"
+                    id="beer-czechia">Beer "Czechia"</label>
+        <label for="black-beer-holland">
+            <input type="checkbox"
+                   name="beer"
+                   value="black beer holland"
+                   id="black-beer-holland">Black Beer "Holland"</label>
+    </div>
+    <div class="submit">
+        <label class="sub-comment">Your Comment<textarea></textarea></label>
+        <button type="submit"
+                id="submit"
+        >Send</button>
+    </div>
+</form>
+</body>
+
+</main>
+
+
+</html>

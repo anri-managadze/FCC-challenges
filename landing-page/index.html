@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <div class="logo">
+        <img id="header-img"   src="https://www.creativefabrica.com/wp-content/uploads/2020/01/26/Vintage-Retro-Beer-Brewery-Brewing-Logo-Graphics-1.jpg" alt=""/>
+        <h2>Beer Distribution Company</h2>
+    </div>
+    <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#aboutourproducts">About Our Products</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#sales">Sales</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="welcome">
+<div class="weekly">
+    <h2>Weekly lottery</h2>
+    <p>Leave us an email address and we will contact you if you win</p>
+    <form id="form"    action=" https://www.freecodecamp.com/email-submit">
+        <input type="email"
+               class="email"
+               name="email"
+               id="email"
+               placeholder="Enter Your Email"
+               required />
+        <input type="submit"
+               id="submit"
+               name="submit"
+               value="send"
+               class="submit"
+        />
+    </form>
+</div>
+    <section class="video">
+        <iframe id="video" src="https://www.youtube.com/embed/Wxo9PHc3jNw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</div>
+
+
+<div class="about">
+    <section id="aboutourproducts">
+        <div class="quality">
+            <div class="icon"><i class="fas fa-fire"></i></div>
+            <div class="about_text">
+                <h2>High Quality</h2>
+                <p>We import only the best products</p>
+            </div>
+        </div>
+        <div class="shipping">
+            <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+            <div class="about_text">
+                <h2>Shipping</h2>
+                <p>Fast and free delivery, citywide</p>
+            </div>
+        </div>
+        <div class="users">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <div class="about_text">
+                <h2>Users</h2>
+                <p>We have thousands of happy users</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="pricing">
+    <div class="product">
+        <h2>Black Beer</h2>
+        <h3>"Georgia"</h3>
+        <h1>1.5$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>White Beer</h2>
+        <h3>"Georgia"</h3>
+        <h1>1.8$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>Black Beer</h2>
+        <h3>"German"</h3>
+        <h1>2$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>Beer</h2>
+        <h3>"Czechia"</h3>
+        <h1>2.5$</h1>
+        <button class="btn">Buy</button>
+    </div>
+</section>
+
+<section id="sales">
+    <div class="product">
+        <h2>White Beer</h2>
+        <h3>"German"</h3>
+        <h1><del>1.8$</del>  0.99$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>Beer</h2>
+        <h3>"Holland"</h3>
+        <h1><del>1.8$</del>  0.99$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>Black Beer</h2>
+        <h3>"Belgium"</h3>
+        <h1><del>1.5$</del>  0.99$</h1>
+        <button class="btn">Buy</button>
+    </div>
+    <div class="product">
+        <h2>White Beer</h2>
+        <h3>"Belgium"</h3>
+        <h1><del>1.5$</del>  0.99$</h1>
+        <button class="btn">Buy</button>
+    </div>
+</section>
+
+<footer>
+    <div class="words">
+    <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <div class="copyright">Copyright 2020, Beer Distribution Company</div>
+</footer>
+
+</body>
+</html>

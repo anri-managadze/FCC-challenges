@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav id="navbar">
+    <header>
+        <h1>IMAGE</h1>
+    </header>
+    <div class="nav-link">
+        <a class="nav-link" href="#Adding_Images">Adding Images</a>
+        <a class="nav-link" href="#Supported_Image_Formats">Supported Image Formats</a>
+        <a class="nav-link" href="#Sizing_Images">Sizing Images</a>
+        <a class="nav-link" href="#Positioning_Images">Positioning Images</a>
+        <a class="nav-link" href="#Inline_Positioning_Images">Inline Positioning Images</a>
+        <a class="nav-link" href="#Block_Positioning_Images">Block Positioning Images</a>
+        <a class="nav-link" href="#Positioning_Images_Flush_Left_or_Right">Positioning Images Flush Left or Right</a>
+        <a class="nav-link" href="#Image_Element_vs_a_Background_Image">Image Element vs a Background Image</a>
+    </div>
+</nav>
+
+<main id="main-doc">
+
+    <section id="Adding_Images" class="main-section">
+        <header>
+            <h2>Adding Images</h2>
+        </header>
+        <p>To add images to a page, we use the <strong>img</strong> inline element. The <strong>img</strong> element is a self-containing, or empty, element, which means that it doesn’t wrap any other content and it exists as a single tag. For the <strong>img </strong>element to work, a src attribute and value must be included to specify the source of the image. The src attribute value is a URL, typically relative to the server where a website is hosted.<br>In conjunction with the src attribute, the alt (alternative text) attribute, which describes the contents of an image, should be applied. The alt attribute value is picked up by search engines and assistive technologies to help convey the purpose of an image. The alt text will be displayed in place of the image if for some reason the image is not available.</p>
+    </section>
+
+    <section id="Supported_Image_Formats" class="main-section">
+        <header>
+            <h2>Supported Image Formats</h2>
+        </header>
+        <p>
+            Images come in a variety of different file formats, and each browser may support (or not support) different formats. By and large, the most commonly supported formats online are gif, jpg, and png images. Of these, the most widely used formats today are jpg and png. The jpg format provides quality images with high color counts while maintaining a decent file size, ideal for faster load times. The png format is great for images with transparencies or low color counts. We most commonly see jpg images used for photographs and png images used for icons or background patterns.
+        </p>
+    </section>
+
+
+    <section id="Sizing_Images" class="main-section">
+        <header>
+            <h2>Sizing Images</h2>
+        </header>
+        <p>It is important to identify the size of an image in order to tell the browser how large the image should be before the page even loads; thus the browser can reserve space for the image and render the page faster. There are a few different ways to size images so that they work well on a page. One option is to use the width and height attributes directly within the <strong>img</strong> tag in HTML.</p>
+        <p>Additionally, images may be sized using the width and height properties in CSS. When both the HTML attributes and CSS properties are used, the CSS attributes will take precedence over the HTML attributes.</p>
+        <p>Specifying either a width or height will cause the other dimension to adjust automatically to maintain the aspect ratio of the image. As an example, if we want an image to be 200 pixels tall but are less specifically concerned about how wide it is, we can set the height to 200 pixels, and the width of the image will adjust accordingly. Setting both a width and height will work also; however, doing so may break the aspect ratio of an image, causing it to appear distorted.</p>
+        <div class="code">
+            <code>img {<br>
+                height: 200px;<br>
+                width: 200px;
+                <br>}</code>
+        </div>
+    </section>
+
+    <section id="Positioning_Images"
+             class="main-section">
+        <header>
+            <h2>Positioning Images</h2>
+        </header>
+        <p>We can use a number of different approaches to position images on a web page. By default images are positioned as inline-level elements; however, their positions may be changed using CSS, specifically:</p>
+        <ul>
+            <li> float</li>
+            <li>box model properties</li>
+            <li>padding</li>
+            <li>border</li>
+            <li>margin</li>
+        </ul>
+    </section>
+
+    <section id="Inline_Positioning_Images"
+             class="main-section">
+        <header>
+            <h2>Inline Positioning Images</h2>
+        </header>
+        <p>The <strong>img</strong> element is by default an inline-level element. Adding an image without any styles to a page will position that image within the same line as the content that surrounds it. Additionally, the height of the line in which an image appears will be changed to match the height of the image, which can create large vertical gaps within that line.</p>
+    </section>
+
+    <section id="Block_Positioning_Images"
+             class="main-section">
+        <header>
+            <h2>Block Positioning Images</h2>
+        </header>
+        <p>Adding the display property to an image and setting its value to block forces the image to be a block-level element. This makes the image appear on its own line, allowing the surrounding content to be positioned above and below the image.</p>
+        <div class="code">
+            <code>img {
+                display: block;
+                }</code>
+        </div>
+    </section>
+
+    <section id="Positioning_Images_Flush_Left_or_Right"
+             class="main-section">
+        <header>
+            <h2>Positioning Images Flush Left or Right</h2>
+        </header>
+        <p>Sometimes displaying an image as inline or block, or perhaps even inline-block, isn’t ideal. We may want the image to appear on the left or right side of its containing element, while all of the other content wraps around the image as necessary. To do this, we use the float property with a value of either left or right.
+            <br>
+            Remembering back to Lesson 5, “Positioning Content,” we recall that the float property was originally intended to position images to the left or right of a containing element. Now we’ll use it for that original purpose.
+            <br>
+            Floating an image is a start; however, all other content will align directly against it. To provide spacing around an image, we’ll use the margin property. Additionally, we can use the padding, border, and background properties to build a frame for the image, if desired.</p>
+        <div class="code">
+            <code>img {<br>
+                background: #eaeaed;<br>
+                border: 1px solid #9799a7;<br>
+                float: right;<br>
+                margin: 8px 0 0 20px;<br>
+                padding: 4px;<br>
+                }
+            </code>
+        </div>
+    </section>
+
+    <section id="Image_Element_vs_a_Background_Image"
+             class="main-section">
+        <header>
+            <h2>Image Element vs a Background Image</h2>
+        </header>
+        <p> There are two primary ways to add images to a web page. One way, as covered here, is to use the <strong>img</strong> element within HTML. Another way is to use the background or background-image property within CSS to assign a background image to an element. Either option will do the job; however, they each have specific use cases.
+            <br>
+            The <strong>img</strong> element within HTML is the preferred option when the image being used holds semantic value and its content is relevant to the content of the page.
+            <br>
+            The background or background-image property within CSS is the preferred option when the image being used is part of the design or user interface of the page. As such, it’s not directly relevant to the content of the page.</p>
+        <div class="code">
+            <code></code>
+        </div>
+        <div class="code">
+            <code></code>
+        </div>
+    </section>
+</main>
+
+
+
+
+</body>
+</html>
