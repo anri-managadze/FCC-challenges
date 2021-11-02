@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+}
+.container {
+    width: 350px;
+    margin: 20px auto;
+    border: 1px solid #EAEAEA;
+    box-shadow: 5px 5px 5px 5px #EAEAEA;
+    text-align: center;
+}
+.container h1 {
+    color: #6F6E7D;
+}
+.timer_display {
+    width: 180px;
+    height: 180px;
+    border: 3px solid #3EBDC6;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#time-left {
+    font-size: 35px;
+    color: #6F6E7D;
+}
+.settings {
+    margin-top: 80px;
+}
+.session, .break, .settings-wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
+.session, .break {
+    padding: 15px;
+    background: #F7F7F7;
+}
+.session {
+    border-top: 1px solid #EAEAEA;
+}
+.break {
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+.settings-wrap {
+    width: 100px;
+}
+.session button, .break button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #3EBDC6;
+    border: 2px solid #3EBDC6;
+    background: #F7F7F7;
+}
+#session-label, #break-label,#session-length , #break-length, #timer-label {
+    color: #6F6E7D;
+    font-size: 20px;
+}
+.timer_buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #3EBDC6;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #3EBDC6;
+    border: 2px solid white;
+}
+.MuiSvgIcon-root {
+    color: white;
+}
+.reset {
+    background: #ee7b5e;
+}
+
